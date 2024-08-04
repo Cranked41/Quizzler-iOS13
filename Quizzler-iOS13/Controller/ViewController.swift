@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falsebutton: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var scoreLabel: UILabel!
     var questionNumber=0
     var quizBrain = QuizBrain()
     let quiz=[["Four + Two is equal to Six.":"True"],["Five - Three is greater than One":"True"],["Three + Eight is less than Ten":"False"]]
@@ -21,7 +22,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         let question1=quiz[0]["questionNumber"]
 
-        updateUI(question: question1)
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
